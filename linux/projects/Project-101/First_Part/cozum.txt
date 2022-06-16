@@ -1,0 +1,5 @@
+cat event_history.csv | grep "serdar" | grep -i "Terminate" | grep -Eo  "i-.{17}"
+
+cat event_history.csv | grep "serdar" | grep -i "Terminate" | grep -Eo  "i-[a-zA-Z0-9]{17}"
+
+cat event_history.csv | grep "serdar" | grep -i "Terminate" | grep -o  "i-.\{17\}"
